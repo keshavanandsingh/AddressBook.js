@@ -93,7 +93,7 @@ let contact4 = new Contact("Aarush","Burra","gopalpur","hanamkonda","warangal","
 addressBook.push(contact3)
 addressBook.push(contact4);
 console.log(addressBook);
-//8 serach by city or state
+  //8 serach by city or state
 function searchByCity(addressBook, city) {
     return addressBook.filter((contact) => contact.city == city);
   }
@@ -159,4 +159,10 @@ function sortAddressBook(addressBook, sortBy) {
   }
   console.log("UC11:Sorted By Name: ");
   console.log(sortAddressBook(addressBook, "name"));
+  console.log("UC11:Sorted By City: ");
+  console.log(sortAddressBook(addressBook, "city"));
+  console.log("UC11:Sorted By State: ");
+  console.log(sortAddressBook(addressBook, "state"));
+  console.log("UC11:Sorted By Zip: ");
+  console.log(sortAddressBook(addressBook, "zip"));
   
